@@ -1,0 +1,362 @@
+li{
+    list-style: none;
+}
+/*nav*/
+
+nav img{
+    width: 268px;
+}
+
+.navigationbar{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1000px;
+    position: relative;
+}
+.links-nav>li{
+    display: inline-block;
+    position: relative;
+    align-content: center;
+}
+.links-nav li a{
+    text-decoration: none;
+    color : #ababab;
+    padding: 5px;
+}
+.links-nav li a:hover{
+    color: #00b39b;
+}
+.dropdown-content{
+    display: none;
+    position: fixed;
+    min-width: 220px;
+    background: #fff;
+    box-shadow: 0 5px 10px 0 #d3cfc9;
+    padding: 0px;
+}
+.dropdown-content ul{
+    padding: 0px;
+}
+.Departments:hover +.dropdown-content{
+    display: block;
+}
+/*main*/
+/* section 1 : discriptions*/
+.discription{
+    text-align: center;
+    margin-top: 70px;
+    max-width: 1000px;
+    margin: auto;
+}
+h1 {
+    color: #00b39b;
+}
+.text-discription{
+    display: flex;
+    padding: 10px;
+}
+
+.text-discription p{
+    margin: 10px;
+    color: #747474;
+    line-height: 1.75;
+    flex-wrap: wrap;
+}
+
+/*section 2 : cards*/
+/* .card-section → .cards → .card-1 → .card-text → .card-1-dropdown → .card-dropdown
+                         ↓→ .card-2 → .card-text → .card-2-dropdown → .card-dropdown
+                         ↓→ .card-3 → .card-text → .card-3-dropdown → .card-dropdown */
+
+
+
+.card-section{
+    display: flex;
+    text-align: center;
+    margin-top: 70px;
+    max-width: 1000px;
+    margin: auto;
+}
+.cards{
+    display: flex;
+    color: white;
+    height: 345px;
+    justify-content: left;
+}
+.cards h1{
+    color: white;
+    font-size: 25px;
+    font-weight: 400px;
+}
+.cards h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 300px;
+}
+.card-1{
+    background-color: #00ccb1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    text-align: left;
+    margin: 10px;
+    width: 33.33%;
+}
+.card-2{
+    background-color: #3d83df;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    text-align: left;
+    margin: 10px;
+    width: 33.33%;
+}
+.card-3{
+    background-color: #1b2734;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    text-align: left;
+    margin: 10px;
+    width: 33.33%;
+}
+#card-dropdowns{
+    background: transparent;
+    color: white;
+    border : 0;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    margin-bottom: 35px
+}
+#card-dropdowns-exception{
+    background: transparent;
+    color: white;
+    border : 0;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+.card-dropdown option{
+    color: black;
+}
+
+/*section 4 : logos*/
+ /* .logos → .title-logos
+          ↓→ .summ-of-logos → .lots-of-logos → .actual-logos
+ */
+.actual-logos {
+    height: 20px;
+    width: auto;
+}
+#logo1{
+    height: 45px;
+}
+#logo4{
+    height: 90px;
+}
+.logos{
+    display: flex;
+    text-align: center;
+    margin-top: 70px;
+    max-width: 1000px;
+    margin: auto;
+}
+.title-logos{
+    width: 33%;
+    font-size: 1.625em;
+    margin: .25em 0 .35em;
+}
+.title-logos h1{
+    font-size: 1.625em;
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.lots-of-logos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.lots-of-logos ul li a{
+    margin: 20px;
+    margin-top: 0px;
+    padding: 20px;
+}
+.summ-of-logos {
+    display: flex;
+    align-content: center;
+}
+.summ-of-logos ul li{
+    padding: 0px;
+} 
+
+/* statistics*/
+/* .stat-bg (the section) → .statistics → .stat-title → 
+                                        ↓→ .right-block →.stat-stats → .stat-countries
+                                                        ↓→ .stat-appointments
+                                                        ↓→ .stat-patients
+                                                        ↓→ .stat-doctors
+*/
+.stat-bg{
+    background: #e5faf8;
+}
+h3{
+    color: #00b39b;
+    font-size: 20px;
+    font-weight: 400;
+}
+.statistics{
+    display: flex;
+    text-align: center;
+    margin-top: 70px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+}
+.stat-title p{
+    max-width: 400px;
+    margin: 20px auto ;
+}
+
+.stat-title{
+    width: 50%;
+}
+.right-block{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.stat-stats{
+    width: 50%;
+}
+
+.stat-card{
+    width: 200px;
+    height: 250px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.logo-stat-card{
+    height: 40px;
+    width: 40px;
+    margin: 0 auto ;
+}
+
+.stat-card h3{
+    margin-top: 10px;
+}
+
+
+
+.the-weird-logo{
+    width: 450px; 
+    height: 450px; 
+    position:absolute; 
+    right: 67%; 
+    margin-top: 168px;
+    background-image: url(../res/the-weird-logo.png);
+    background-repeat: no-repeat;
+}
+.stat-countries{
+    margin-top: 50px;
+
+}
+.stat-appointments{
+    margin-top: 25px;
+}
+
+.stat-patients{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+/*sight seeing*/
+/*
+.sight-seeing (the section)  → .sight-seeing-cards → .sight-seeing-text → .town → .reservation
+*/
+
+.sight-seeing{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    color: #747474;
+}
+.sight-seeing-cards{
+    display: flex ;
+    flex-wrap: wrap;
+}
+
+.town-card{
+    box-shadow: 0 5px 10px 0 transparent;
+    transition: box-shadow .2s ease 0s;
+    width: 280px;
+    margin: 25px;
+    border: 1px solid rgba(0,0,0,.03);
+}
+.town-img{
+    border-radius: 6px;
+}
+.town-card:hover{
+
+    box-shadow: 0 20px 50px 0 rgb(0 0 0 / 13%);
+    transition: box-shadow .2s ease 0s;
+}
+.reservation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px;
+    width: 100%;
+}
+.town-text{
+    margin: 0;
+    font-weight: 500;
+    color: #747474;
+}
+.town a{
+    text-decoration: none;
+}
+
+
+/* the last section */
+
+
+.conclusion{
+    text-align: center;
+    margin: 5rem auto;
+}
+
+#the-only-h1-not-green{
+    color: #333;
+    font-size: 2.1428571429em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/*footer*/
+footer{
+    
+    text-align: center;
+    color: #ababab;
+    max-width: 1000px;
+    margin: auto;
+    font-size: 12px;
+}
+footer div{
+    border-top: 1px solid #eef2f2;
+    padding: 1em 0;
+}
