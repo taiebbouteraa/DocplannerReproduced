@@ -12,16 +12,6 @@ nav img{
     justify-content: space-between;
     margin:0 auto;
     max-width: 1000px;
-    /* position: fixed;
-    background-color: white; */
-    /* margin-left: auto;
-    margin-right: auto;
-    clear: both; */
-    /* overflow: hidden;
-    width: 100%;
-    z-index: 500;
-    padding: 20px; */
-
 }
 .links-nav>li{
     display: inline-block;
@@ -236,6 +226,7 @@ h3{
     color: #00b39b;
     font-size: 20px;
     font-weight: 400;
+    position : relative;
 }
 .statistics{
     display: flex;
@@ -292,7 +283,7 @@ h3{
     height: 450px; 
     position:absolute; 
     right: 67%; 
-    margin-top: 168px;
+    top: 49%;
     background-image: url(../res/the-weird-logo.png);
     background-repeat: no-repeat;
 }
