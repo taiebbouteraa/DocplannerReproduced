@@ -10,9 +10,18 @@ nav img{
 .navigationbar{
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    margin:0 auto;
     max-width: 1000px;
-    position: relative;
+    /* position: fixed;
+    background-color: white; */
+    /* margin-left: auto;
+    margin-right: auto;
+    clear: both; */
+    /* overflow: hidden;
+    width: 100%;
+    z-index: 500;
+    padding: 20px; */
+
 }
 .links-nav>li{
     display: inline-block;
@@ -38,11 +47,27 @@ nav img{
 .dropdown-content ul{
     padding: 0px;
 }
-.Departments:hover +.dropdown-content{
+.Departments:hover  +.dropdown-content{
     display: block;
+}
+
+nav.content{
+    position: fixed;
+    overflow: hidden;
+    z-index: 500;
+    clear: both;
+    background-color: rgba(255, 255, 255, 0.973); 
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 -2px 10px 0 rgb(0 0 0 / 15%);
 }
 /*main*/
 /* section 1 : discriptions*/
+#smallest-logo{
+    margin-top: 100px;
+}
 .discription{
     text-align: center;
     margin-top: 70px;
@@ -194,7 +219,7 @@ h1 {
     align-content: center;
 }
 .summ-of-logos ul li{
-    padding: 0px;
+    padding: 0 10px;
 } 
 
 /* statistics*/
