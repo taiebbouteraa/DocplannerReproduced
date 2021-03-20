@@ -221,6 +221,8 @@ h1 {
 */
 .stat-bg{
     background: #e5faf8;
+    position: relative;
+    overflow: hidden;
 }
 h3{
     color: #00b39b;
