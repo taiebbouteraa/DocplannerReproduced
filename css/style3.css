@@ -37,9 +37,10 @@ nav img{
 .dropdown-content ul{
     padding: 0px;
 }
-.Departments:hover  +.dropdown-content{
+.Departments:hover + .dropdown-content{
     display: block;
 }
+.dropdown-content:hover{display: block;}
 
 nav.content{
     position: fixed;
